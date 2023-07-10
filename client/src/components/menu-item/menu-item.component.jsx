@@ -1,7 +1,7 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const MenuItem = ({ title, size, imageUrl, id, url, linkUrl }) => {
+const MenuItem = ({ title, size, imageUrl, linkUrl }) => {
   const navigate = useNavigate();
 
   return (

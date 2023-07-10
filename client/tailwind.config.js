@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ["FRIESKA"],
-      sans: ["Celine Sans"],
+      sans: ["Celine Sans", "Roboto"],
       serif: ["Nurom"],
     },
   },

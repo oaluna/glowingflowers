@@ -11,24 +11,27 @@ import CustomButton from "../custom-button/custom-button.component"
 const CartDropdown = ({ cartItems, history, dispatch }) => {
 	const navigate = useNavigate()
 	return (
-  <div className="absolute w-[400px] h-[540px] flex flex-column items-center justify-center bg-gray-50 p-[15px] border border-gray-500/25 top-[90px] right-[40px] z-10 text-slate-900 shadow-2xl">
-    <div className="max-h-auto max-w-96 wrap z-10">
+  <div className="absolute w-[400px] h-[480px] flex flex-col bg-rose-50 p-[15px] border border-solid border-gray-50/20 top-[90px] right-[40px] z-10 text-slate-900 shadow-xl">
+	<h2 className="text-5xl text-center font-medium font-sans">My Shopping Cart</h2>
+    <div className="h-full flex flex-col overflow-y-scroll">
       {cartItems.length ? (
         cartItems.map(cartItem => (
           <CartItem key={cartItem.id} item={cartItem} />
         ))
       ) : (
-        <div className="text-lg mx-auto z-10 text-center flex flex-row h-auto justify-center">Your cart is empty</div>
+				<span className="text-sm my-[50px] mx-auto">Your cart is empty</span>
       )}
     </div>
-    <CustomButton className="mx-auto mt-auto z-10 text-center ml-0" 
+	
+    <CustomButton className="mt-auto"
       onClick={() => {
         navigate('/checkout');
         dispatch(toggleCartHidden());
       }}
     >
-      GO TO CHECKOUT
+      <p className="text-md font-sans flex flex-row items-center m-auto ">Proceed to Checkout</p>
     </CustomButton>
+	
   </div>
 )};
 
