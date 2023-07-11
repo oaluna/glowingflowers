@@ -85,7 +85,7 @@ export const PreviewContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 15px 15px;
-  margin: 5px auto;
+  margin: 125px auto;
 
   @media screen and (max-width: 800px) {
     display: grid;

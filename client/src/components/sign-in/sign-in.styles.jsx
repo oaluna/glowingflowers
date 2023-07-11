@@ -4,7 +4,7 @@ export const SignInContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 1em;
+  margin: 0 2em;
 `;
 
 export const SignInTitle = styled.h2`
