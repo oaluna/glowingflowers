@@ -8,5 +8,5 @@ module.exports = {
       serif: ["Nurom"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui")]
 };

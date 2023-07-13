@@ -1,29 +1,23 @@
+import SHOP_DATA from "../../pages/shop/shop.data";
 const FeaturedItems = () => {
 	return (
-		<div className="carousel rounded-box">
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
-  </div>
-</div>
-	)
-}
+		<>
+		<h3 className="text-center font-bold text-3xl w-full flex-row items-center no-wrap">Browse our different categories for our broad selection of arrangements.</h3>
+		<div className="carousel rounded-box max-w-[65vw] mx-auto relative">
+      {SHOP_DATA.map((category) => (
+        <>
+          <div className="carousel-item w-full  overflow-x-hidden mx-auto h-full my-0 p-16">
+            <img
+              className="rounded-t-lg bg-gradient-to-tr h-full w-full object-fill  from-rose-50 to-lime-50"
+              src={category.image}
+              alt="item"
+            />
+          </div>
+        </>
+      ))}
+    </div>
+		</>
+  );
+};
 
-export default FeaturedItems
+export default FeaturedItems;
