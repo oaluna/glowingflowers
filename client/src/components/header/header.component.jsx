@@ -14,7 +14,7 @@ import { HomeIcon } from "@heroicons/react/24/outline";
 
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
-  <nav className="h-auto lg:h-26 w-full flex flex-column lg:flex-row items-center justify-evenly lg:justify-between -mt-16 lg:mt-0 p-auto lg:p-0 z-10 border-none shadow-none bg-transparent">
+  <nav className="h-auto lg:h-26 w-full flex flex-column lg:flex-row items-center justify-evenly lg:justify-between -mt-16 lg:mt-0 p-auto lg:p-0 z-20 border-none shadow-none bg-transparent">
     <div className="w-full font-['Roboto'] lg:w-1/2 h-auto flex flex-row items-center justify-end relative text-right lg:mt-2 mx-auto lg:mr-24 p-auto hover:text-pink-600 space-x-5 z-10">
       <Link to="/">
         <HomeIcon height={"16"} width={"16"}/>
