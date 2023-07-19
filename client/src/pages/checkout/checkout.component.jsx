@@ -10,40 +10,33 @@ import {
   selectCartTotal
 } from '../../redux/cart/cart.selectors';
 
-import {
-  CheckoutPageContainer,
-  CheckoutHeaderContainer,
-  HeaderBlockContainer,
-  TotalContainer,
-  WarningContainer
-} from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <CheckoutPageContainer>
-    <CheckoutHeaderContainer>
-      <HeaderBlockContainer>
+  <div className="w-1/2 min-h-[90vh] flex flex-col items-center mt-[50px] mb-0 mx-auto">
+    <div className="w-full h-[40px] flex justify-between border-b-2">
+      <div className="uppercase w-[23%] last:w-[8%]">
         <span>Product</span>
-      </HeaderBlockContainer>
-      <HeaderBlockContainer>
+      </div>
+			<div className="uppercase w-[23%] last:w-[8%]">
         <span>Description</span>
-      </HeaderBlockContainer>
-      <HeaderBlockContainer>
+      </div>
+       <div className="uppercase w-[23%] last:w-[8%]">
         <span>Quantity</span>
-      </HeaderBlockContainer>
-      <HeaderBlockContainer>
+      </div>
+       <div className="uppercase w-[23%] last:w-[8%]">
         <span>Price</span>
-      </HeaderBlockContainer>
-      <HeaderBlockContainer>
+      </div>
+       <div className="uppercase w-[23%] last:w-[8%]">
         <span>Remove</span>
-      </HeaderBlockContainer>
-    </CheckoutHeaderContainer>
+      </div>
+    </div>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <TotalContainer>TOTAL: ${total.toFixed(2)}</TotalContainer>
+    <div className="mt-[30px] ml-auto text-md">TOTAL: ${total.toFixed(2)}</div>
 
     <StripeCheckoutButton price={total} />
-  </CheckoutPageContainer>
+  </div>
 );
 
 const mapStateToProps = createStructuredSelector({

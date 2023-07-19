@@ -11,45 +11,48 @@ import { signOutStart } from "../../redux/user/user.actions";
 
 import { HomeIcon } from "@heroicons/react/24/outline";
 
-const fontFamily = `'Roboto', sans-serif`
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
-  <nav className="h-auto lg:h-26 w-full flex flex-column lg:flex-row items-center justify-evenly lg:justify-between -mt-16 lg:mt-0 p-auto lg:p-0 z-10 border-none shadow-none">
-    <div className="w-full font-['Roboto'] lg:w-1/2 h-auto flex flex-row items-center justify-end relative text-right lg:mt-2 mx-auto lg:mr-24 p-auto hover:text-pink-600 space-x-5 z-10">
+<header class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
       <Link to="/">
         <HomeIcon height={"16"} width={"16"}/>
       </Link>
+		<div class="md:flex md:items-center md:mx-auto md:gap-12 font-[Urbanist]">
       <Link
-        className="text-red-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
+        className="text-slate-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
         to="/shop"
       >
         SHOP
       </Link>
       <Link
-        className="text-red-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
+        className="text-slate-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
         to="/contact"
       >
         CONTACT
       </Link>
       {currentUser ? (
         <Link
-          className="text-red-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
+          className="text-slate-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
           onClick={signOutStart}
         >
           SIGN OUT
         </Link>
       ) : (
         <Link
-          className="text-red-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
+          className="text-slate-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
           to="/signin"
         >
           SIGN IN
         </Link>
       )}
-      <CartIcon />
     </div>
+      <CartIcon />
     {hidden ? null : <CartDropdown />}
-  </nav>
+		</div>
+		</div>
+  </header>
 );
 
 const mapStateToProps = createStructuredSelector({

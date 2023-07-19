@@ -12,7 +12,7 @@ const CollectionPreview = ({ title, items, id }) => {
   return (
     <div className="flex flex-column w-screen flex-wrap items-center p-[14px] mt-24">
       <h1
-        className="w-screen text-3xl font-thin mb-[25px] ml-[60px] p-0 lg:p-5 cursor-pointer font-sans h-2 bg-gradient-to-r from-rose-800/5 to-rose-900 flex flex-row items-start justify-start lg:items-center hover:text-rose-300 text-left"
+        className="w-screen text-5xl font-thin font-[Urbanist] mb-[25px] ml-[60px] p-0 lg:p-5 cursor-pointer h-2 bg-gradient-to-r from-rose-800/5 to-rose-900 via-slate-200 flex flex-row items-start justify-start lg:items-center hover:text-rose-300 text-left"
         onClick={() => navigate(`${path}/${route}`)}
       >
         {title}
