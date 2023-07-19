@@ -17,8 +17,7 @@ const CollectionItem = ({ item, addItem }) => {
         Add to cart
 				<ShoppingCartIcon width={"24px"} height={"24px"} px={5}/>
       </button>
-      </div>
-			</div>
+    
     </div>
   );
 };
