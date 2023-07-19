@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import CollectionItem from "../collection-item/collection-item.component";
-
 import { PreviewContainer } from "./collection-preview.styles";
 
-const CollectionPreview = ({ title, items, id }) => {
+const CollectionPreview = ({ title, items, id}) => {
   const navigate = useNavigate();
 
   const { path, route } = useParams();

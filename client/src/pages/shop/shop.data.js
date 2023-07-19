@@ -1,9 +1,10 @@
-const SHOP_DATA = [
+const SHOP_DATA = [ 
   {
     id: 0,
     routeName: "shop/all-occasions",
     title: "All Occasions",
-    items: [
+    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/allOccasions_vim9wj.png",
+		items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673493607/arrangements/brightenDay_fanxij.png",
@@ -110,7 +111,8 @@ const SHOP_DATA = [
     id: 1,
     routeName: "shop/holidays",
     title: "Holidays",
-    items: [
+    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/seasonal-section_ftez8a.png",
+		items: [
       {
         id: 61,
         imageUrl:
@@ -257,7 +259,8 @@ const SHOP_DATA = [
     id: 2,
     routeName: "shop/bridal",
     title: "Bridal",
-    items: [
+    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/bridal-section_zoo4ac.png",
+		items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/w_500,h_550/v1656003850/arrangements/metropolitan-design_fashox.png",
@@ -284,7 +287,8 @@ const SHOP_DATA = [
     id: 3,
     routeName: "shop/well-wishes",
     title: "Well Wishes",
-    items: [
+    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/well-wishes_bov766.png",
+		items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003846/arrangements/asymmetric-centerpiece-design_anphoq.png",
@@ -331,7 +335,8 @@ const SHOP_DATA = [
     id: 4,
     routeName: "shop/deals",
     title: "Deals",
-    items: [
+    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/Deals_gwhuek.png",
+		items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/v1657057740/arrangements/city-combo-three-in-one_no0ozp.png",

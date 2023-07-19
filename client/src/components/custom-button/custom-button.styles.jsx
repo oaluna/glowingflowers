@@ -46,14 +46,16 @@ const getButtonStyles = (props) => {
 
 export const CustomButtonContainer = styled.button`
   min-width: 165px;
+	max-width: 100%;
+	margin: 0 5px;
   width: auto;
   height: 50px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
   line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  padding: 0 15px 0 15px;
+  font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  
   font-weight: 700;
   cursor: pointer;
   display: flex;

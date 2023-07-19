@@ -35,7 +35,7 @@ const SignUp = ({ signUpStart }) => {
   };
 
   return (
-    <div className="w-full flex flex-col my-0 mx-1">
+    <div className="w-full flex flex-col my-0 mx-2 bg-slate-100 p-5">
       <h2 className="my-[10px] mx-0">I do not have a account</h2>
       <span>Sign up with your email and password</span>
       <form className='sign-up-form' onSubmit={handleSubmit}>
