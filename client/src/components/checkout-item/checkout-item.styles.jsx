@@ -7,7 +7,7 @@ export const CheckoutItemContainer = styled.div`
   justify-content: space-between;
   min-height: 100px;
   border-bottom: 1px solid darkgrey;
-
+	font-family: "Urbanist", sans-serif;
   padding: 15px 0px;
   font-size: 20px;
   align-items: center;
@@ -35,6 +35,7 @@ export const ImageContainer = styled.div`
 
 export const TextContainer = styled.span`
   width: 20%;
+
 `;
 
 export const QuantityContainer = styled(TextContainer)`

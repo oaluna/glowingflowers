@@ -1,10 +1,151 @@
-const SHOP_DATA = [ 
+export const CATEGORY_DATA = [
   {
     id: 0,
     routeName: "shop/all-occasions",
     title: "All Occasions",
-    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/allOccasions_vim9wj.png",
-		items: [
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/allOccasions_vim9wj.png",
+  },
+  {
+    id: 1,
+    routeName: "shop/holidays",
+    title: "Holidays",
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/seasonal-section_ftez8a.png",
+  },
+  {
+    id: 2,
+    routeName: "shop/bridal",
+    title: "Bridal",
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/bridal-section_zoo4ac.png",
+  },
+  {
+    id: 3,
+    routeName: "shop/well-wishes",
+    title: "Well Wishes",
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/well-wishes_bov766.png",
+  },
+  {
+    id: 4,
+    routeName: "shop/deals",
+    title: "Deals",
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/Deals_gwhuek.png",
+  },
+];
+
+export const FEATURED_ITEM_DATA = [
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673493607/arrangements/brightenDay_fanxij.png",
+    id: 42,
+    favorite: "add",
+    delete: "delete",
+    name: "Brighten Up Your Day Special",
+    emoji: "🌷",
+    description:
+      "Part of our daily special and it's available for you to enjoy.",
+    pricingText: 50,
+    quantity: 1,
+    category: "all-occasions",
+    numReviews: 0,
+    comments: [],
+    brand: "",
+    published: true,
+    countInStock: true,
+    stores: ["home", "all-occasions"],
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/cosmoplolitan-design-alt_pmwds2.png",
+    id: 19,
+    favorite: "add",
+    delete: "delete",
+    name: "Chic Centerpiece",
+    emoji: "💅",
+    description:
+      "For graduations, bridesmaids or birthday girls. Called chic for its petite shape. This bouquet also can be placed in the vase after the event  is done and turn into a home decor or even as a centerpiece. Mixed spring flowers and use mostly bright and happy colors. So comfortable to hold in your hand, modern and classy.",
+    pricingText: 42,
+    quantity: 1,
+    category: "holidays",
+    numReviews: 0,
+    comments: [],
+    brand: "",
+    published: true,
+    countInStock: true,
+    stores: ["home", "all-occasions", "holidays"],
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/w_500,h_550/v1656003850/arrangements/metropolitan-design_fashox.png",
+    id: 7,
+    favorite: "add",
+    delete: "delete",
+    name: "Metropolitan",
+    emoji: "🌸",
+    description:
+      "A perfect bouquet to gift for any occasion. The bouquet made as one side view and a bit in long stems they are mixed spring flowers variety of mum, chrysanthemums, roses, lisianthus, tulips, spray roses and some greenish with a variety of foliages to make it so elegant in your hand or when it’s placed in a ceramic water vase (included) on table as a home decor. ",
+    pricingText: 58,
+    quantity: 1,
+    category: "bridal",
+    numReviews: 0,
+    comments: [],
+    brand: "",
+    published: true,
+    countInStock: true,
+    stores: ["home", "all-occasions", "bridal"],
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1657057747/arrangements/massive-metropolitan_jyj0ht.png",
+    id: 28,
+    favorite: "add",
+    delete: "delete",
+    name: "Massive Metropolitan",
+    emoji: "❗",
+    description: "No Description Available",
+    pricingText: 60,
+    quantity: 1,
+    category: "deals",
+    numReviews: 0,
+    comments: [],
+    brand: "",
+    published: true,
+    countInStock: true,
+    stores: ["home", "all-occasions", "deals"],
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003846/arrangements/asymmetric-centerpiece-design_anphoq.png",
+    id: 21,
+    favorite: "add",
+    delete: "delete",
+    name: "Asymmetric Centerpiece",
+    emoji: "👑",
+    pricingText: 60,
+    description:
+      "The dramatic curve of this asymmetrical arrangement makes for an excellent centerpiece. Its unusual, mystifying shape give an elegant look to your dining table. Predominantly made of roses, along with carnations, hypericum, delphinium, eucalyptus, evangarium, curly willows and foliage.",
+    quantity: 1,
+    category: "well-wishes",
+    numReviews: 0,
+    comments: [],
+    brand: "",
+    published: true,
+    countInStock: true,
+    stores: ["home", "all-occasions", "well-wishes"],
+  },
+];
+
+export const SHOP_DATA = [
+  {
+    id: 0,
+    routeName: "shop/all-occasions",
+    title: "All Occasions",
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/allOccasions_vim9wj.png",
+    items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673493607/arrangements/brightenDay_fanxij.png",
@@ -111,8 +252,9 @@ const SHOP_DATA = [
     id: 1,
     routeName: "shop/holidays",
     title: "Holidays",
-    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/seasonal-section_ftez8a.png",
-		items: [
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/seasonal-section_ftez8a.png",
+    items: [
       {
         id: 61,
         imageUrl:
@@ -259,8 +401,9 @@ const SHOP_DATA = [
     id: 2,
     routeName: "shop/bridal",
     title: "Bridal",
-    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/bridal-section_zoo4ac.png",
-		items: [
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905586/bridal-section_zoo4ac.png",
+    items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/w_500,h_550/v1656003850/arrangements/metropolitan-design_fashox.png",
@@ -281,14 +424,34 @@ const SHOP_DATA = [
         countInStock: true,
         stores: ["home", "all-occasions", "bridal"],
       },
+      {
+        imageUrl:
+          "https://res.cloudinary.com/dgdnpkfun/image/upload/v1657057757/arrangements/metropolitan-wedding-package_em4kvs.png",
+        id: 31,
+        favorite: "add",
+        delete: "delete",
+        name: "Metropolitan Wedding Combo",
+        emoji: "❗",
+        description: "No Description Available",
+        pricingText: 60,
+        quantity: 1,
+        category: "deals",
+        numReviews: 0,
+        comments: [],
+        brand: "",
+        published: true,
+        countInStock: true,
+        stores: ["home", "bridal", "deals"],
+      },
     ],
   },
   {
     id: 3,
     routeName: "shop/well-wishes",
     title: "Well Wishes",
-    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/well-wishes_bov766.png",
-		items: [
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/well-wishes_bov766.png",
+    items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003846/arrangements/asymmetric-centerpiece-design_anphoq.png",
@@ -335,8 +498,9 @@ const SHOP_DATA = [
     id: 4,
     routeName: "shop/deals",
     title: "Deals",
-    image: "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/Deals_gwhuek.png",
-		items: [
+    image:
+      "https://res.cloudinary.com/dgdnpkfun/image/upload/v1682905587/Deals_gwhuek.png",
+    items: [
       {
         imageUrl:
           "https://res.cloudinary.com/dgdnpkfun/image/upload/v1657057740/arrangements/city-combo-three-in-one_no0ozp.png",
@@ -492,5 +656,3 @@ const SHOP_DATA = [
     ],
   },
 ];
-
-export default SHOP_DATA;

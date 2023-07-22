@@ -13,7 +13,7 @@ import {
 
 const CheckoutPage = ({ cartItems, total }) => (
   <div className="w-1/2 min-h-[90vh] flex flex-col items-center mt-[50px] mb-0 mx-auto">
-    <div className="w-full h-[40px] flex justify-between border-b-2">
+    <div className="w-full h-[40px] flex justify-between border-b-2 font-[Urbanist]">
       <div className="uppercase w-[23%] last:w-[8%]">
         <span>Product</span>
       </div>

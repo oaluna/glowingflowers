@@ -13,13 +13,13 @@ import { HomeIcon } from "@heroicons/react/24/outline";
 
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
-<header class="bg-white">
-  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
+<header className="bg-white">
+  <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div className="flex h-16 items-center justify-between">
       <Link to="/">
         <HomeIcon height={"16"} width={"16"}/>
       </Link>
-		<div class="md:flex md:items-center md:mx-auto md:gap-12 font-[Urbanist]">
+		<div className="md:flex md:items-center md:mx-auto md:gap-12 font-[Urbanist]">
       <Link
         className="text-slate-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
         to="/shop"

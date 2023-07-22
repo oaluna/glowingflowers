@@ -6,8 +6,6 @@ import Header from './components/header/header.component'
 import Spinner from './components/spinner/spinner.component';
 import { checkUserSession } from './redux/user/user.actions';
 
-
-
 const Contact = lazy(()=> import('./pages/contact/contact.component'));
 const Shop = lazy(() => import('./pages/shop/shop.component'));
 const Checkout = lazy(() => import('./pages/checkout/checkout.component'));

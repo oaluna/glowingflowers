@@ -6,7 +6,7 @@ const MenuItem = ({ title, size, imageUrl, linkUrl }) => {
 
   return (
     <div
-      className="flex flex-row items-center card-compact h-96 overflow-hidden shadow-xl image-full space-x-0 my-5"
+      className="flex flex-row items-center card-compact h-96 overflow-hidden shadow-xl image-full space-x-0 my-5 bg-gradient-to-br from-lime-50 to-sky-50 via-rose-50"
       size={size}
       onClick={() => navigate(`${linkUrl}`)}
     >
@@ -14,7 +14,7 @@ const MenuItem = ({ title, size, imageUrl, linkUrl }) => {
         <img className="background-image" src={imageUrl} alt="menu-item" />
       </figure>
       <div className="card-body mr-5 text-right">
-        <h2 className="card-title font-display font-medium text-7xl">
+        <h2 className="card-title font-[Urbanist] font-light text-7xl">
           {title}
         </h2>
         <div className="w-full h-full flex flex-column items-end justify-end">

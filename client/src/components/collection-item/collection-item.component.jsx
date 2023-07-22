@@ -4,7 +4,7 @@ import { ShoppingCartIcon } from "@heroicons/react/24/outline"
 import { addItem } from '../../redux/cart/cart.actions';
 
 const CollectionItem = ({ item, addItem }) => {
-  const { name, pricingText, imageUrl, description } = item;
+  const { name, pricingText, imageUrl } = item;
 
   return (
     <div className='rounded-lg bg-gray-50 shadow-sm dark:bg-neutral-700 p-5 h-full flex flex-col items-start justify-evenly'>

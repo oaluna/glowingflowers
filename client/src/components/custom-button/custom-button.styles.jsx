@@ -55,7 +55,7 @@ export const CustomButtonContainer = styled.button`
   padding: 0 15px 0 15px;
   font-size: 10px;
   text-transform: uppercase;
-  
+  z-index: 10;
   font-weight: 700;
   cursor: pointer;
   display: flex;

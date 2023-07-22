@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
 import CollectionPageContainer from '../collection/collection.container';
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
-import SHOP_DATA from './shop.data.js';
+import {SHOP_DATA} from './shop.data';
+
 
 import CollectionPreview from '../../components/collection-preview/collection-preview.component';
 
